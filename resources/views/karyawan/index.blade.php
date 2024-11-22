@@ -109,7 +109,7 @@
                     const nip = this.getAttribute('data-id');
                     Swal.fire({
                         title: 'Apakah Anda yakin?',
-                        text: "Data yang dihapus tidak dapat dikembalikan!",
+                        text: "Data yang dihapus seperti masa lalu",
                         icon: 'warning',
                         showCancelButton: true,
                         confirmButtonColor: '#3085d6',

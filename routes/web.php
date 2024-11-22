@@ -18,11 +18,12 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('sesi/index');
+    return view('dashboard');
 })->name('dashboard');
 
 Route::resource('departemen', DepartemenController::class)->middleware('iniLogin');
 Route::resource('karyawan', KaryawanController::class)->middleware('iniLogin');
+Route::resource('dashboard', SessionController::class)->middleware('iniLogin');
 
 Route::get('/login',[SessionController::class,'index'])->middleware('iniTamu');
 Route::get('sesi',[SessionController::class,'index'])->middleware('iniTamu');

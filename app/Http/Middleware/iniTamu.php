@@ -17,7 +17,7 @@ class iniTamu
     public function handle(Request $request, Closure $next): Response
     {
         if(auth::check())
-     return redirect('departemen')->with('succes seperti mie sukses', 'Anda sudah login dan anda diharuskan logout terlebih dahulu jika ingin ke halaman login');
+     return redirect('departemen')->with('succes seperti orang sukses', 'Anda sudah login dan anda diharuskan logout terlebih dahulu jika ingin ke halaman login');
 {
     return $next($request);
 
